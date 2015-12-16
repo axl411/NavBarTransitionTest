@@ -1,0 +1,13 @@
+.DS_Store
+eleme.xcodeproj/xcuserdata/
+eleme.xcodeproj/project.xcworkspace/xcuserdata/
+eleme.xcworkspace/xcuserdata/
+Pods/Pods.xcodeproj/xcuserdata/
+*.xccheckout
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.moved-aside
+*.swp
+build/
+DerivedData/
