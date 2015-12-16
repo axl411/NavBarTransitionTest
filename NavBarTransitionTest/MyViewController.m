@@ -17,9 +17,15 @@
 
 - (IBAction)push:(id)sender {
   MyViewController *vc = [MyViewController new];
-  vc.title = @"Second";
+  vc.title = @"Different";
   [vc.backgroundNavBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
   vc.backgroundNavBar.shadowImage = [UIImage new];
+  [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)same:(id)sender {
+  MyViewController *vc = [MyViewController new];
+  vc.title = @"Same";
   [self.navigationController pushViewController:vc animated:YES];
 }
 

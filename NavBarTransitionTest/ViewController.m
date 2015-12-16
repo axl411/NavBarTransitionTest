@@ -22,6 +22,7 @@
   [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
   self.navigationController.navigationBar.shadowImage = [UIImage new];
   [self.view addSubview:self.backgroundNavBar];
+  self.backgroundNavBar.layer.zPosition = 1;
 }
 
 - (UINavigationBar *)backgroundNavBar {

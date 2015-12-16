@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--My View Controller-->
+        <!--Master-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MyViewController" sceneMemberID="viewController">
@@ -18,8 +18,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="zXZ-Qf-ePU">
-                        <barButtonItem key="rightBarButtonItem" title="push" id="5Rq-3c-Hjq">
+                    <navigationItem key="navigationItem" title="Master" id="zXZ-Qf-ePU">
+                        <barButtonItem key="leftBarButtonItem" title="same nav bar" id="7ON-55-mai">
+                            <connections>
+                                <action selector="same:" destination="BYZ-38-t0r" id="CcD-Gg-XMT"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="different nav bar" id="5Rq-3c-Hjq">
                             <connections>
                                 <action selector="push:" destination="BYZ-38-t0r" id="yoj-9T-m8Y"/>
                             </connections>
